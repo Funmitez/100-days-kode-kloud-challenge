@@ -1,0 +1,18 @@
+Day 52: Revert Deployment to Previous Version in Kubernetes
+
+Date: October 17, 2025
+Overview
+Rolled back problematic deployments to previous versions.
+Key Concepts Learned
+
+Rollback operations
+Revision history
+Deployment annotations
+Recovery strategies
+
+Commands Used
+bashkubectl rollout undo deployment/nginx
+kubectl rollout undo deployment/nginx --to-revision=2
+kubectl rollout history deployment/nginx
+Challenges Faced
+Tracking which revision had working configuration. Annotations became crucial!
