@@ -1,0 +1,18 @@
+Day 56: Deploy Nginx Web Server on Kubernetes Cluster
+
+Date: October 24, 2025
+Overview
+Deployed production-ready Nginx with services and ingress.
+Key Concepts Learned
+
+Service types (ClusterIP, NodePort, LoadBalancer)
+Service discovery
+External access
+Load balancing
+
+Commands Used
+bashkubectl create deployment nginx --image=nginx
+kubectl expose deployment nginx --type=NodePort --port=80
+kubectl get services
+Challenges Faced
+Accessing services from outside the cluster. NodePort vs LoadBalancer confusion!
