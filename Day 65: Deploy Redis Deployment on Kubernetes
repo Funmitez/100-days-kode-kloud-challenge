@@ -1,0 +1,14 @@
+Day 65: Deploy Redis Deployment on Kubernetes
+
+Date: November 2, 2025
+Overview
+Deployed Redis cache with persistent storage.
+Key Concepts Learned
+
+In-memory databases in K8s
+StatefulSets vs Deployments
+Redis configuration
+Data persistence for caches
+
+Challenges Faced
+Deciding between StatefulSet and Deployment. Redis data persistence requirements!
