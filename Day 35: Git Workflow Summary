@@ -1,0 +1,45 @@
+Day 35: Git Workflow Summary
+
+## 📅 Date
+2025-10-05
+
+## 📝 Task Description
+Review and consolidate Git concepts learned from branching to hooks.
+
+## 🛠 Steps Taken
+
+Reviewed commit history:
+
+```bash
+git log --oneline
+Checked branches and remotes:
+
+bash
+Copy code
+git branch -a
+git remote -v
+Practiced common workflow:
+
+bash
+Copy code
+git checkout -b new-feature
+git add .
+git commit -m "Added new feature"
+git push origin new-feature
+⚠️ Challenges Faced
+Remembering the correct Git command for each scenario.
+
+✅ Solution
+Practiced daily Git usage.
+
+Documented commands for reference.
+
+📚 Key Learnings
+Git is essential for collaboration.
+
+Proper workflow prevents mistakes.
+
+Documentation improves productivity.
+
+yaml
+Copy code
