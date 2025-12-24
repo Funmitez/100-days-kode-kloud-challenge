@@ -1,0 +1,25 @@
+Day 60: Persistent Volumes in Kubernetes
+
+Date: October 30, 2025
+Overview
+Implemented persistent storage for stateful applications.
+Key Concepts Learned
+
+PersistentVolume (PV)
+PersistentVolumeClaim (PVC)
+Storage classes
+Volume provisioning
+
+Commands Used
+yamlapiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mysql-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Gi
+Challenges Faced
+Understanding access modes and storage class compatibility. Data loss was a real fear!
