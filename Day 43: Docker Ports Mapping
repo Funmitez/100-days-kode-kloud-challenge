@@ -1,0 +1,19 @@
+Day 43: Docker Ports Mapping
+
+Date: October 8, 2025
+Overview
+Mastered port mapping for container accessibility.
+Key Concepts Learned
+
+Port publishing
+Host port vs container port
+Port binding to specific interfaces
+Dynamic port assignment
+
+Commands Used
+bashdocker run -p 8080:80 nginx
+docker run -p 127.0.0.1:8080:80 nginx
+docker port container_name
+
+Challenges Faced
+Port conflicts when multiple containers tried to use the same host port. Had to plan port allocation carefully.
