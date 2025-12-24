@@ -1,0 +1,55 @@
+day-34-git-hooks.md
+
+```md
+# Day 34: Git Hooks
+
+## 📅 Date
+2025-10-04
+
+## 📝 Task Description
+Learn how to automate tasks using Git hooks.
+
+## 🛠 Steps Taken
+
+Navigated to hooks directory:
+
+```bash
+cd .git/hooks
+Created a pre-commit hook:
+
+bash
+Copy code
+nano pre-commit
+Added script content:
+
+bash
+Copy code
+#!/bin/bash
+echo "Running pre-commit checks..."
+Made hook executable:
+
+bash
+Copy code
+chmod +x pre-commit
+Tested hook by making a commit:
+
+bash
+Copy code
+git commit -m "Testing git hooks"
+⚠️ Challenges Faced
+Hook not executing.
+
+Permission denied error.
+
+✅ Solution
+Added execute permission using chmod +x.
+
+Verified correct hook filename.
+
+📚 Key Learnings
+Git hooks help enforce rules.
+
+Hooks are local to repositories.
+
+yaml
+Copy code
