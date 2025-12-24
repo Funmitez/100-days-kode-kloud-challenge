@@ -1,0 +1,33 @@
+Day 66: Deploy MySQL on Kubernetes
+
+Date: November 2, 2025
+Overview
+Set up MySQL database with proper storage and configuration.
+Key Concepts Learned
+
+Stateful application deployment
+Database initialization
+Secret management for credentials
+Backup considerations
+
+Commands Used
+yamlapiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: mysql
+spec:
+  serviceName: mysql
+  replicas: 1
+  template:
+    spec:
+      containers:
+      - name: mysql
+        image: mysql:5.7
+        env:
+        - name: MYSQL_ROOT_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: mysql-secret
+              key: password
+Challenges Faced
+StatefulSets are complex! Understanding ordering guarantees and persistent volume claims per pod.
