@@ -1,0 +1,14 @@
+Day 63: Deploy Iron Gallery App on Kubernetes
+
+Date: October 30, 2025
+Overview
+Deployed a multi-tier application with database and frontend.
+Key Concepts Learned
+
+Multi-tier architecture
+Service mesh basics
+Application dependencies
+Configuration management
+
+Challenges Faced
+Coordinating multiple services and ensuring proper networking between components.
