@@ -11,4 +11,4 @@ Dependency resolution
 Log analysis
 
 Challenges Faced
-Module import error
+Module import error and missing dependencies. Had to rebuild the container image! 
