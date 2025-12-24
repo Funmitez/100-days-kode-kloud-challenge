@@ -1,0 +1,18 @@
+Day 40: Docker EXEC Operations
+
+Date: October 6, 2025
+Overview
+Executed commands inside running containers.
+Key Concepts Learned
+
+Docker exec command
+Interactive vs non-interactive execution
+Running processes in containers
+Debugging running containers
+
+Commands Used
+bashdocker exec -it container_name bash
+docker exec container_name ls -la
+docker exec -d container_name service nginx restart
+Challenges Faced
+Understanding when to use interactive mode (-it) vs detached mode (-d).
