@@ -1,0 +1,17 @@
+Day 37: Copy File to Docker Container
+
+Date: October 4, 2025
+Overview
+Learned to transfer files between host and containers.
+Key Concepts Learned
+
+Docker cp command
+Container filesystem
+File permissions in containers
+Bidirectional copying
+
+Commands Used
+bashdocker cp /local/file container_name:/path/in/container
+docker cp container_name:/path/in/container /local/path
+Challenges Faced
+File ownership and permissions can change during copy. Had to understand container user contexts.
