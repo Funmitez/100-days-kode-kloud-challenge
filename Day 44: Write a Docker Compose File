@@ -1,0 +1,45 @@
+Day 44: Write a Docker Compose File
+
+Date: October 10, 2025
+Overview
+Created multi-container applications using Docker Compose.
+Key Concepts Learned
+
+Docker Compose syntax (YAML)
+Service definitions
+Volume and network management
+Environment variables
+
+Commands Used
+yamlversion: '3'
+services:
+  web:
+    image: nginx
+    ports:
+      - "80:80"
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+bashdocker-compose up -d
+docker-compose down
+Challenges Faced
+YAML indentation errors! One wrong space breaks everything.
+
+Day 45: Resolve Dockerfile Issues
+Date: October 10, 2025
+Overview
+Debugged and fixed problematic Dockerfiles.
+Key Concepts Learned
+
+Build troubleshooting
+Error log analysis
+Dependency resolution
+Best practices enforcement
+
+Commands Used
+bashdocker build --no-cache -t image:tag .
+docker logs container_name
+docker inspect container_name
+Challenges Faced
+Build failures due to network issues, missing dependencies, and syntax errors. Learned to read build output carefully!
