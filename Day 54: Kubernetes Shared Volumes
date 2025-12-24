@@ -1,0 +1,21 @@
+Day 54: Kubernetes Shared Volumes
+
+Date: October 24, 2025
+Overview
+Implemented shared volumes between containers in a pod.
+Key Concepts Learned
+
+EmptyDir volumes
+Volume sharing
+Inter-container communication
+Data persistence within pods
+
+Commands Used
+yamlvolumes:
+- name: shared-data
+  emptyDir: {}
+volumeMounts:
+- name: shared-data
+  mountPath: /data
+Challenges Faced
+Understanding volume lifecycle and when data persists vs gets deleted.
