@@ -1,0 +1,47 @@
+📄 day-33-resolve-git-merge-conflicts.md
+
+```md
+# Day 33: Resolve Git Merge Conflicts
+
+## 📅 Date
+2025-09-29
+
+## 📝 Task Description
+Learn how to identify and resolve merge conflicts in Git.
+
+## 🛠 Steps Taken
+
+Attempted to merge branches:
+
+```bash
+git merge feature-branch
+Checked conflicting files:
+
+bash
+Copy code
+git status
+Edited files to resolve conflicts manually.
+
+Marked conflict as resolved:
+
+bash
+Copy code
+git add <file-name>
+git commit -m "Resolved merge conflict"
+⚠️ Challenges Faced
+Understanding conflict markers (<<<<<<<, =======, >>>>>>>).
+
+Risk of removing important code.
+
+✅ Solution
+Carefully reviewed both versions before editing.
+
+Tested changes after resolving conflicts.
+
+📚 Key Learnings
+Merge conflicts occur when changes overlap.
+
+Proper communication reduces conflicts.
+
+yaml
+Copy code
