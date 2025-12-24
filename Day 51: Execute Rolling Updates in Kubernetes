@@ -1,0 +1,18 @@
+Day 51: Execute Rolling Updates in Kubernetes
+
+Date: October 16, 2025
+Overview
+Performed zero-downtime deployments using rolling updates.
+Key Concepts Learned
+
+Rolling update strategy
+Deployment history
+Update monitoring
+Rollout status
+
+Commands Used
+bashkubectl set image deployment/nginx nginx=nginx:1.19
+kubectl rollout status deployment/nginx
+kubectl rollout history deployment/nginx
+Challenges Faced
+Understanding update strategies and ensuring applications stayed available during updates.
