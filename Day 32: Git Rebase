@@ -1,0 +1,44 @@
+📄 day-32-git-rebase.md
+
+```md
+# Day 32: Git Rebase
+
+## 📅 Date
+2025-09-29
+
+## 📝 Task Description
+Understand how to reapply commits on top of another branch using Git rebase.
+
+## 🛠 Steps Taken
+
+Checked current branch:
+
+```bash
+git branch
+Rebased feature branch onto main:
+
+bash
+Copy code
+git checkout feature-branch
+git rebase main
+Resolved conflicts when prompted:
+
+bash
+Copy code
+git status
+git add .
+git rebase --continue
+⚠️ Challenges Faced
+Merge conflicts during rebase.
+
+Accidentally rebasing the wrong branch.
+
+✅ Solution
+Carefully reviewed conflicts before staging.
+
+Used git rebase --abort when mistakes occurred.
+
+📚 Key Learnings
+Rebase creates a cleaner commit history.
+
+Should not rebase shared branches.
