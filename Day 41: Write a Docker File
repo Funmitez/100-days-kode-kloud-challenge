@@ -1,0 +1,21 @@
+Day 41: Write a Docker File
+
+Date: October 6, 2025
+Overview
+Created my first Dockerfile for automated image building.
+Key Concepts Learned
+
+Dockerfile syntax
+Build instructions (FROM, RUN, COPY, CMD, ENTRYPOINT)
+Layer caching
+Multi-stage builds
+
+Commands Used
+dockerfileFROM ubuntu:20.04
+RUN apt-get update && apt-get install -y nginx
+COPY . /var/www/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
+bashdocker build -t my-image:v1 .
+Challenges Faced
+Layer caching and optimization! Learned to order commands properly to leverage cache effectively.
