@@ -1,0 +1,21 @@
+Day 47: Docker Python App
+
+Date: October 14, 2025
+Overview
+Containerized a Python application with dependencies.
+Key Concepts Learned
+
+Python Docker best practices
+Requirements.txt handling
+Virtual environments in containers
+Application configuration
+
+Commands Used
+dockerfileFROM python:3.9
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+COPY . .
+CMD ["python", "app.py"]
+Challenges Faced
+Python dependency conflicts and ensuring the container had all required packages. Managing image size was also a concern.
