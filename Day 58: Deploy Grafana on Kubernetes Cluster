@@ -1,0 +1,18 @@
+Day 58: Deploy Grafana on Kubernetes Cluster
+
+Date: October 24, 2025
+Overview
+Deployed Grafana for monitoring and visualization.
+Key Concepts Learned
+
+Monitoring stack deployment
+Persistent volumes for stateful apps
+Service configuration
+Dashboard persistence
+
+Commands Used
+bashkubectl create deployment grafana --image=grafana/grafana
+kubectl expose deployment grafana --type=NodePort --port=3000
+kubectl create pvc grafana-storage
+Challenges Faced
+Data persistence! Grafana needed PersistentVolumeClaims to retain dashboards.
