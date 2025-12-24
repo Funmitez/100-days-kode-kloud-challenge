@@ -1,0 +1,18 @@
+Day 39: Create a Docker Image From Container
+
+Date: October 4, 2025
+Overview
+Created custom Docker images from modified containers.
+Key Concepts Learned
+
+Docker commit command
+Image creation workflow
+Container modifications
+Image tagging
+
+Commands Used
+bashdocker commit container_name new_image_name:tag
+docker tag image_id username/repository:tag
+docker history image_name
+Challenges Faced
+Understanding that commit creates large images. Later learned Dockerfile is the better approach!
