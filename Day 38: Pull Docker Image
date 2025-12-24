@@ -1,0 +1,19 @@
+Day 38: Pull Docker Image
+
+Date: October 4, 2025
+Overview
+Mastered pulling images from Docker registries.
+Key Concepts Learned
+
+Docker Hub registry
+Image tags and versions
+Image layers
+Private registries
+
+Commands Used
+bashdocker pull ubuntu:20.04
+docker pull nginx:latest
+docker images
+docker image ls
+Challenges Faced
+Understanding image tags and why "latest" doesn't always mean the newest version!
