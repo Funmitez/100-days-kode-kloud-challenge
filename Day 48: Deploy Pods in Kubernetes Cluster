@@ -1,0 +1,27 @@
+Day 48: Deploy Pods in Kubernetes Cluster
+
+Date: October 16, 2025
+Overview
+Created my first Kubernetes pods and understood the basics of K8s.
+Key Concepts Learned
+
+Pod architecture
+YAML manifests
+kubectl command basics
+Pod lifecycle
+
+Commands Used
+bashkubectl run nginx --image=nginx
+kubectl get pods
+kubectl describe pod nginx
+kubectl delete pod nginx
+yamlapiVersion: v1
+kind: Pod
+metadata:
+  name: my-pod
+spec:
+  containers:
+  - name: nginx
+    image: nginx:latest
+Challenges Faced
+Understanding the difference between pods and containers. Pods crashed due to image pull errors!
