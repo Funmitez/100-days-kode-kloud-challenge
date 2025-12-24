@@ -1,0 +1,18 @@
+Day 49: Deploy Applications with Kubernetes Deployments
+
+Date: October 16, 2025
+Overview
+Learned to use Deployments for scalable application management.
+Key Concepts Learned
+
+Deployments vs Pods
+Replica sets
+Declarative configuration
+Scaling applications
+
+Commands Used
+bashkubectl create deployment nginx --image=nginx --replicas=3
+kubectl get deployments
+kubectl scale deployment nginx --replicas=5
+Challenges Faced
+Understanding how Deployments manage ReplicaSets which manage Pods. The abstraction layers took time to grasp!
