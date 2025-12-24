@@ -1,0 +1,19 @@
+Day 36: Deploy Nginx Container on Application Server
+
+Date: October 4, 2025
+Overview
+Deployed my first containerized web server using Nginx.
+Key Concepts Learned
+
+Docker run command
+Port mapping
+Container lifecycle
+Image pulling from Docker Hub
+
+Commands Used
+bashdocker pull nginx
+docker run -d -p 80:80 --name my-nginx nginx
+docker ps
+docker logs my-nginx
+Challenges Faced
+Port conflicts! Had to ensure port 80 wasn't already in use by another service.
