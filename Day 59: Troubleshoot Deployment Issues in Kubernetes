@@ -1,0 +1,19 @@
+Day 59: Troubleshoot Deployment Issues in Kubernetes
+
+Date: October 24, 2025
+Overview
+Debugged various deployment failures systematically.
+Key Concepts Learned
+
+Troubleshooting methodology
+Log analysis
+Event inspection
+Common failure patterns
+
+Commands Used
+bashkubectl describe pod pod-name
+kubectl logs pod-name --previous
+kubectl get events --sort-by='.lastTimestamp'
+kubectl exec -it pod-name -- /bin/bash
+Challenges Faced
+ImagePullBackOff, CrashLoopBackOff, and pending pods. Each error required different debugging approaches!
