@@ -1,0 +1,19 @@
+Day 42: Create a Docker Network
+
+Date: October 7, 2025
+Overview
+Set up Docker networks for container communication.
+Key Concepts Learned
+
+Bridge networks
+Network isolation
+Container DNS resolution
+Network drivers
+
+Commands Used
+bashdocker network create my-network
+docker network ls
+docker run --network=my-network --name container1 image
+docker network inspect my-network
+Challenges Faced
+Understanding network drivers and when to use custom networks vs default bridge.
