@@ -1,0 +1,23 @@
+Day 50: Set Resource Limits in Kubernetes Pods
+
+Date: October 16, 2025
+Overview
+Configured CPU and memory limits for pods.
+Key Concepts Learned
+
+Resource requests vs limits
+Quality of Service (QoS) classes
+Resource management
+Node resource allocation
+
+Commands Used
+yamlresources:
+  requests:
+    memory: "64Mi"
+    cpu: "250m"
+  limits:
+    memory: "128Mi"
+    cpu: "500m"
+
+Challenges Faced
+Pods getting OOMKilled! Had to balance resource allocation carefully.
