@@ -1,0 +1,51 @@
+Day 31: Git Stash
+
+## 📅 Date
+2025-09-26
+
+## 📝 Task Description
+Learn how to temporarily save uncommitted changes using Git stash without committing them.
+
+## 🛠 Steps Taken
+
+Checked repository status:
+
+```bash
+git status
+Saved changes using stash:
+
+bash
+Copy code
+git stash
+Verified stash list:
+
+bash
+Copy code
+git stash list
+Applied stashed changes back:
+
+bash
+Copy code
+git stash apply
+Removed stash after applying:
+
+bash
+Copy code
+git stash drop
+⚠️ Challenges Faced
+Confusion between git stash apply and git stash pop.
+
+Risk of overwriting current changes.
+
+✅ Solution
+Used git stash list to track stashes.
+
+Applied stash carefully after checking working directory.
+
+📚 Key Learnings
+Git stash is useful for switching branches safely.
+
+apply keeps stash, pop removes it.
+
+yaml
+Copy code
