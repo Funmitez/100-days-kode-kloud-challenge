@@ -1,0 +1,23 @@
+Day 57: Print Environment Variables
+
+Date: October 24, 2025
+Overview
+Managed environment variables in Kubernetes pods.
+Key Concepts Learned
+
+ConfigMaps
+Environment variable injection
+Pod configuration
+Secret management basics
+
+Commands Used
+yamlenv:
+- name: DATABASE_URL
+  value: "mysql://db:3306"
+- name: API_KEY
+  valueFrom:
+    configMapKeyRef:
+      name: app-config
+      key: api-key
+Challenges Faced
+Understanding ConfigMaps vs Secrets and when to use each.
