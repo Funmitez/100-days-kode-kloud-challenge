@@ -1,0 +1,20 @@
+Day 61: Init Containers in Kubernetes
+
+Date: October 30, 2025
+Overview
+Used init containers for pod initialization tasks.
+Key Concepts Learned
+
+Init container pattern
+Sequential execution
+Dependency management
+Initialization workflows
+
+Commands Used
+yamlinitContainers:
+- name: init-mydb
+  image: busybox
+  command: ['sh', '-c', 'until nslookup mydb; do sleep 2; done']
+
+Challenges Faced
+Debugging init container failures and ensuring they completed successfully before main containers started.
