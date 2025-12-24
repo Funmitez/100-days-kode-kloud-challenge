@@ -1,0 +1,18 @@
+Day 46: Deploy an App on Docker Containers
+
+Date: October 14, 2025
+Overview
+Deployed a complete multi-tier application using containers.
+Key Concepts Learned
+
+Application architecture in containers
+Service linking
+Data persistence
+Container orchestration basics
+
+Commands Used
+bashdocker-compose up -d
+docker-compose ps
+docker-compose logs -f
+Challenges Faced
+Managing dependencies between containers and ensuring proper startup order.
