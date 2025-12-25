@@ -1,0 +1,37 @@
+Day 77: Jenkins Deploy Pipeline
+
+Date: November 30, 2025
+Overview
+Created my first deployment pipeline using Jenkinsfile.
+Key Concepts Learned
+
+Declarative pipeline syntax
+Pipeline stages
+Agent configuration
+Pipeline as code
+
+Jenkinsfile
+groovypipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                sh 'npm install'
+                sh 'npm run build'
+            }
+        }
+        stage('Test') {
+            steps {
+                sh 'npm test'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh 'scp -r build/* user@server:/var/www/html/'
+            }
+        }
+    }
+}
+
+Challenges Faced
+Pipeline syntax errors! One wrong bracket breaks the entire pipeline.
