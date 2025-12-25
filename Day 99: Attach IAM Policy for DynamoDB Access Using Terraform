@@ -1,0 +1,53 @@
+Day 99: Attach IAM Policy for DynamoDB Access Using Terraform
+
+Date: December 23, 2025
+Overview
+Configured IAM permissions for DynamoDB access.
+Key Concepts Learned
+
+DynamoDB IAM policies
+Resource-based policies
+Service-specific permissions
+Instance profiles
+
+Terraform Code
+hclresource "aws_iam_policy" "dynamodb_policy" {
+  name        = "dynamodb-access-policy"
+  description = "Policy for DynamoDB table access"
+
+  policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Effect = "Allow"
+        Action = [
+          "dynamodb:GetItem",
+          "dynamodb:PutItem",
+          "dynamodb:UpdateItem",
+          "dynamodb:DeleteItem",
+          "dynamodb:Query",
+          "dynamodb:Scan"
+        ]
+        Resource = "arn:aws:dynamodb:us-east-1:*:table/my-table"
+      }
+    ]
+  })
+}
+
+resource "aws_iam_instance_profile" "app_profile" {
+  name = "app-instance-profile"
+  role = aws_iam_role.app_role.name
+}
+
+resource "aws_instance" "app" {
+  ami                  = "ami-0c55b159cbfafe1f0"
+  instance_type        = "t2.micro"
+  iam_instance_profile = aws_iam_instance_profile.app_profile.name
+
+  tags = {
+    Name = "app-with-dynamodb-access"
+  }
+}
+
+Challenges Faced
+Understanding instance profiles and how they differ from IAM roles.
