@@ -1,142 +1,349 @@
-# 🚀 100 Days KodeKloud Challenge
+   100 Days KodeKloud DevOps Challenge - COMPLETED! 
 
-This repository documents my journey through the **100 Days DevOps Challenge** on KodeKloud.  
-Each day contains:
-- **Scenario**: The problem statement or task
-- **Solution**: Steps, commands, or configurations used
-- **(Optional)** Screenshots or configs
+📖 Overview
+Welcome to my 100 Days DevOps Challenge repository! This documents my incredible journey from August 27, 2025 to December 23, 2025, where I committed to learning DevOps practices every single day for 100 consecutive days.
+Challenge Status: ✅ COMPLETED
+Total Days: 100/100
+Start Date: August 27, 2025
+Completion Date: December 23, 2025
 
-## 📅 Progress Tracker (100 Days)
+🎯 What I Accomplished
+This challenge transformed me from a DevOps beginner into a confident practitioner capable of:
 
-| Day | Topic | Status |
-|-----|-------|--------|
-| 1   | Linux User Setup with Non-Interactive Shell | ✅ Completed |
-| 2   | Linux File Permissions | ⏳ Pending |
-| 3   | Managing Processes in Linux | ⏳ Pending |
-| 4   | Networking Basics in Linux | ⏳ Pending |
-| 5   | SSH Setup and Key Management | ⏳ Pending |
-| 6   | Linux Package Management | ⏳ Pending |
-| 7   | Linux Cron Jobs & Scheduling | ⏳ Pending |
-| 8   | Disk Management in Linux | ⏳ Pending |
-| 9   | Log Management | ⏳ Pending |
-| 10  | Linux User Groups | ⏳ Pending |
-| 11  | Basic Shell Scripting | ⏳ Pending |
-| 12  | Advanced Shell Scripting | ⏳ Pending |
-| 13  | Git Basics | ⏳ Pending |
-| 14  | Git Branching & Merging | ⏳ Pending |
-| 15  | Git Rebase & Collaboration | ⏳ Pending |
-| 16  | Docker Basics | ⏳ Pending |
-| 17  | Docker Images & Containers | ⏳ Pending |
-| 18  | Docker Volumes | ⏳ Pending |
-| 19  | Docker Networking | ⏳ Pending |
-| 20  | Docker Compose | ⏳ Pending |
-| 21  | Kubernetes Basics | ⏳ Pending |
-| 22  | Kubernetes Pods | ⏳ Pending |
-| 23  | Kubernetes ReplicaSets | ⏳ Pending |
-| 24  | Kubernetes Deployments | ⏳ Pending |
-| 25  | Kubernetes Services | ⏳ Pending |
-| 26  | Kubernetes ConfigMaps | ⏳ Pending |
-| 27  | Kubernetes Secrets | ⏳ Pending |
-| 28  | Kubernetes Namespaces | ⏳ Pending |
-| 29  | Kubernetes Ingress | ⏳ Pending |
-| 30  | Kubernetes Volumes | ⏳ Pending |
-| 31  | Ansible Basics | ⏳ Pending |
-| 32  | Ansible Playbooks | ⏳ Pending |
-| 33  | Ansible Roles | ⏳ Pending |
-| 34  | Ansible Inventory | ⏳ Pending |
-| 35  | Ansible Vault | ⏳ Pending |
-| 36  | Ansible with Docker | ⏳ Pending |
-| 37  | Terraform Basics | ⏳ Pending |
-| 38  | Terraform Providers | ⏳ Pending |
-| 39  | Terraform Variables | ⏳ Pending |
-| 40  | Terraform State Management | ⏳ Pending |
-| 41  | Terraform Modules | ⏳ Pending |
-| 42  | Terraform Workspaces | ⏳ Pending |
-| 43  | Terraform with AWS | ⏳ Pending |
-| 44  | Terraform with GCP | ⏳ Pending |
-| 45  | Terraform with Azure | ⏳ Pending |
-| 46  | CI/CD Basics | ⏳ Pending |
-| 47  | Jenkins Pipelines | ⏳ Pending |
-| 48  | Jenkins Shared Libraries | ⏳ Pending |
-| 49  | GitHub Actions | ⏳ Pending |
-| 50  | GitLab CI/CD | ⏳ Pending |
-| 51  | Monitoring Basics | ⏳ Pending |
-| 52  | Prometheus Setup | ⏳ Pending |
-| 53  | Grafana Dashboards | ⏳ Pending |
-| 54  | Alertmanager | ⏳ Pending |
-| 55  | Logging with ELK Stack | ⏳ Pending |
-| 56  | Logging with EFK Stack | ⏳ Pending |
-| 57  | Cloud Basics (AWS) | ⏳ Pending |
-| 58  | AWS IAM | ⏳ Pending |
-| 59  | AWS EC2 | ⏳ Pending |
-| 60  | AWS S3 | ⏳ Pending |
-| 61  | AWS VPC Networking | ⏳ Pending |
-| 62  | AWS RDS | ⏳ Pending |
-| 63  | AWS Load Balancers | ⏳ Pending |
-| 64  | AWS Auto Scaling | ⏳ Pending |
-| 65  | AWS CloudFormation | ⏳ Pending |
-| 66  | AWS CloudWatch | ⏳ Pending |
-| 67  | Azure Basics | ⏳ Pending |
-| 68  | GCP Basics | ⏳ Pending |
-| 69  | Cloud Security | ⏳ Pending |
-| 70  | Helm Charts | ⏳ Pending |
-| 71  | Kubernetes Operators | ⏳ Pending |
-| 72  | Service Mesh (Istio) | ⏳ Pending |
-| 73  | Kubernetes Security | ⏳ Pending |
-| 74  | Kubernetes RBAC | ⏳ Pending |
-| 75  | Kubernetes Network Policies | ⏳ Pending |
-| 76  | Docker Security | ⏳ Pending |
-| 77  | Linux Security Hardening | ⏳ Pending |
-| 78  | Vault by HashiCorp | ⏳ Pending |
-| 79  | Secrets Management | ⏳ Pending |
-| 80  | Infrastructure Monitoring | ⏳ Pending |
-| 81  | Incident Response Basics | ⏳ Pending |
-| 82  | Disaster Recovery | ⏳ Pending |
-| 83  | Blue/Green Deployments | ⏳ Pending |
-| 84  | Canary Deployments | ⏳ Pending |
-| 85  | Infrastructure Scaling | ⏳ Pending |
-| 86  | High Availability Systems | ⏳ Pending |
-| 87  | Load Testing | ⏳ Pending |
-| 88  | Chaos Engineering | ⏳ Pending |
-| 89  | Cost Optimization | ⏳ Pending |
-| 90  | DevSecOps Basics | ⏳ Pending |
-| 91  | Policy as Code (OPA) | ⏳ Pending |
-| 92  | Supply Chain Security | ⏳ Pending |
-| 93  | Advanced Git Workflows | ⏳ Pending |
-| 94  | API Testing | ⏳ Pending |
-| 95  | Serverless (AWS Lambda) | ⏳ Pending |
-| 96  | Event-Driven Architectures | ⏳ Pending |
-| 97  | Edge Computing | ⏳ Pending |
-| 98  | Observability | ⏳ Pending |
-| 99  | Final Project Setup | ⏳ Pending |
-| 100 | Final Project Delivery | ⏳ Pending |
-
----
-
-## 🎯 Goal
-By the end of this challenge, I will have 100 documented hands-on DevOps/Cloud/Automation problems and solutions — serving as a complete **portfolio of practical DevOps skills**.
+🐧 Managing Linux systems - User administration, security hardening, service management
+🔄 Mastering Git workflows - Advanced branching, merging, rebasing, and collaboration
+🐳 Containerizing applications - Docker images, networking, multi-container apps
+☸️ Orchestrating with Kubernetes - Deployments, services, persistent storage, troubleshooting
+🔧 Building CI/CD pipelines - Jenkins automation, parameterized builds, multi-stage pipelines
+📝 Automating configuration - Ansible playbooks, templates, conditionals
+☁️ Provisioning infrastructure - Terraform for AWS VPC, EC2, IAM, CloudWatch
 
 
-## 🛠️ Tools & Topics Covered
-Throughout this challenge, I’ll work with:
-- Linux
-- Networking
-- Docker
-- Kubernetes
-- Terraform
-- Ansible
-- CI/CD tools
-- Cloud (AWS, GCP, Azure)
+📚 Challenge Breakdown
+🐧 Days 1-20: Linux & Web Services Foundation
+Building the fundamental skills every DevOps engineer needs
+Days 1-10: Linux Fundamentals
 
----
+✅ User management (interactive/non-interactive shells, temporary users)
+✅ SSH security (key-based auth, root access hardening)
+✅ SELinux configuration
+✅ Cron job automation
+✅ Bash scripting
+✅ MariaDB troubleshooting
 
-## 📖 How to Use
-Navigate into each day’s folder to view:
-- `scenario.md` → Challenge description  
-- `solution.md` → My solution with commands/config  
+Days 11-20: Web Services & Databases
 
-Example:
-```bash
-cd Day01
-cat scenario.md
-cat solution.md
+✅ Tomcat server deployment
+✅ Nginx configuration (SSL, load balancing)
+✅ IPtables firewall rules
+✅ PostgreSQL database setup
+✅ LAMP stack configuration
+✅ PHP-FPM with Nginx using Unix sockets
+
+📄 View Detailed Documentation → | Days 11-20 →
+
+🔀 Days 21-34: Git Version Control Mastery
+Mastering the cornerstone of collaborative development
+
+✅ Repository setup and management
+✅ Forking and cloning workflows
+✅ Branch creation and management
+✅ Merge strategies and conflict resolution
+✅ Remote repository management
+✅ Git revert, cherry-pick, and stash
+✅ Interactive rebasing
+✅ Git hooks for automation
+✅ Pull request workflows
+
+Key Achievement: Became proficient in advanced Git techniques like interactive rebasing, cherry-picking, and writing custom hooks for workflow automation.
+📄 View Detailed Documentation →
+
+🐳 Days 35-47: Docker Containerization
+Embracing containers and modern application deployment
+
+✅ Docker installation and daemon management
+✅ Container lifecycle management
+✅ Image creation (commit and Dockerfile)
+✅ Docker networking (bridge, custom networks)
+✅ Port mapping and exposure
+✅ Docker Compose for multi-container apps
+✅ Volume management
+✅ Dockerfile optimization
+✅ Deploying Python applications in containers
+
+Key Achievement: Built production-ready Dockerfiles with multi-stage builds and deployed complex multi-container applications using Docker Compose.
+📄 View Detailed Documentation →
+
+☸️ Days 48-67: Kubernetes Orchestration
+Scaling containerized applications in production
+Core Kubernetes Concepts (Days 48-52)
+
+✅ Pod deployment and management
+✅ Deployments and ReplicaSets
+✅ Resource limits and requests
+✅ Rolling updates and rollbacks
+✅ Deployment strategies
+
+Advanced Kubernetes (Days 53-67)
+
+✅ Persistent Volumes and Claims
+✅ ConfigMaps and Secrets management
+✅ Init containers and sidecar patterns
+✅ StatefulSets for databases
+✅ Services and networking
+✅ Volume mounts troubleshooting
+✅ Multi-tier application deployment (Guest Book, Iron Gallery)
+✅ Redis and MySQL deployment
+✅ Grafana monitoring setup
+
+Key Achievement: Deployed and managed complex stateful applications including databases (MySQL, Redis) and monitoring systems (Grafana) in Kubernetes. Mastered troubleshooting skills for pods, volumes, and networking issues.
+📄 View Detailed Documentation →
+
+🔧 Days 68-81: Jenkins CI/CD Pipeline Mastery
+Automating the software delivery lifecycle
+Jenkins Fundamentals (Days 68-71)
+
+✅ Jenkins server setup
+✅ Plugin management
+✅ User access control
+✅ Freestyle job configuration
+
+Advanced Jenkins (Days 72-81)
+
+✅ Parameterized builds
+✅ Scheduled jobs (cron-style)
+✅ Database backup automation
+✅ Master-slave architecture
+✅ Project-based security
+✅ Declarative pipelines
+✅ Conditional pipeline execution
+✅ Chained builds
+✅ Multi-stage pipelines with parallel execution
+
+Key Achievement: Created sophisticated Jenkins pipelines with parallel test execution, automated deployments, and integrated notification systems. Implemented distributed builds using slave nodes.
+📄 View Detailed Documentation →
+
+📝 Days 82-93: Ansible Configuration Management
+Automating infrastructure configuration at scale
+
+✅ Inventory management (static and dynamic)
+✅ Playbook creation and troubleshooting
+✅ File and directory management
+✅ Package installation across distributions
+✅ Service management
+✅ Blockinfile and Lineinfile modules
+✅ ACL management
+✅ Jinja2 templates
+✅ Conditional execution
+✅ Handlers and notifications
+
+Key Achievement: Built idempotent playbooks using Jinja2 templates and conditionals to manage configurations across multiple Linux distributions. Automated complex multi-server deployments.
+📄 View Detailed Documentation →
+
+☁️ Days 94-100: Terraform Infrastructure as Code
+Provisioning cloud infrastructure programmatically
+
+✅ VPC creation and networking
+✅ Security group configuration
+✅ EC2 instance provisioning
+✅ IAM policy and role management
+✅ Private subnet with NAT gateway
+✅ DynamoDB access policies
+✅ CloudWatch alarms and monitoring
+✅ SNS topic integration
+
+Key Achievement: Provisioned complete AWS infrastructure including VPCs, subnets, NAT gateways, EC2 instances, IAM roles/policies, and CloudWatch monitoring - all as code using Terraform. Implemented infrastructure that follows AWS best practices for security and scalability.
+📄 View Detailed Documentation →
+
+🛠️ Technologies Mastered
+Operating Systems & Shell
+
+Linux (CentOS, Ubuntu, RHEL)
+Bash Scripting
+
+Version Control
+
+Git (Advanced workflows, branching, merging, rebasing, hooks)
+GitHub (Pull requests, collaboration)
+
+Containerization
+
+Docker (Images, containers, networking, volumes, Dockerfile)
+Docker Compose (Multi-container applications)
+
+Container Orchestration
+
+Kubernetes (Pods, Deployments, Services, ConfigMaps, Secrets, PV/PVC, StatefulSets)
+
+CI/CD & Automation
+
+Jenkins (Freestyle jobs, pipelines, parameterized builds, distributed builds)
+
+Configuration Management
+
+Ansible (Playbooks, roles, templates, conditionals, modules)
+
+Infrastructure as Code (IaC)
+
+Terraform (AWS provisioning, VPC, EC2, IAM, CloudWatch)
+
+Cloud Platform
+
+AWS (VPC, EC2, S3, IAM, DynamoDB, CloudWatch, SNS, NAT Gateway, Security Groups)
+
+Web Servers
+
+Nginx (Reverse proxy, load balancing, SSL/TLS configuration)
+Apache HTTP Server (HTTPD)
+Apache Tomcat (Java application server)
+
+Databases
+
+MySQL
+MariaDB
+PostgreSQL
+Redis (In-memory data store)
+
+Security & Networking
+
+SELinux (Security-Enhanced Linux)
+IPtables (Firewall configuration)
+SSH (Key-based authentication, security hardening)
+SSL/TLS Certificates
+
+Monitoring & Observability
+
+Grafana (Visualization and monitoring)
+AWS CloudWatch (Metrics, alarms, monitoring)
+
+Programming & Scripting
+
+Python (Application containerization)
+PHP (LAMP stack, PHP-FPM)
+
+Other Tools & Technologies
+
+Cron (Job scheduling)
+systemd (Service management)
+YAML (Configuration files)
+JSON (Data format, IAM policies)
+Jinja2 (Template engine)
+
+
+Summary by Category:
+
+7 Core DevOps Tools: Linux, Git, Docker, Kubernetes, Jenkins, Ansible, Terraform
+1 Cloud Platform: AWS
+4 Databases: MySQL, MariaDB, PostgreSQL, Redis
+3 Web Servers: Nginx, Apache, Tomcat
+2 Monitoring Tools: Grafana, CloudWatch
+Multiple Security Tools: SELinux, IPtables, SSH, SSL/TLS
+
+Total: 30+ Technologies Mastered across the entire DevOps ecosystem! 🚀
+💪 Skills Gained
+Technical Skills
+
+✅ Linux system administration and security hardening
+✅ Advanced Git workflows and collaboration
+✅ Container orchestration with Kubernetes
+✅ CI/CD pipeline design and implementation
+✅ Infrastructure as Code (IaC) with Terraform
+✅ Configuration management with Ansible
+✅ Cloud architecture on AWS
+✅ Monitoring and alerting setup
+✅ Troubleshooting complex distributed systems
+
+Soft Skills
+
+✅ Resilience - Pushed through countless errors and failures
+✅ Problem-solving - Debugged complex issues across multiple technologies
+✅ Self-discipline - Showed up every single day for 100 days
+✅ Continuous learning - Absorbed new concepts daily
+✅ Documentation - Maintained detailed records of my journey
+✅ Time management - Balanced learning with daily responsibilities
+
+
+🔥 Most Challenging Moments
+The Struggles That Made Me Stronger
+
+Day 13: IPtables Configuration - Spent hours debugging firewall rules only to realize they were in the wrong order. Learned that sequence matters!
+Day 32: Git Rebase Conflicts - Interactive rebasing with multiple conflicts was brutal. But mastering this made me a Git power user.
+Day 45: Dockerfile Debugging - Build failures due to network issues and missing dependencies. Learned to read build output like a pro.
+Day 53: Kubernetes Volume Mounts - Permission denied errors everywhere! SELinux and file permissions nearly broke me, but I persevered.
+Day 59: Kubernetes Troubleshooting - ImagePullBackOff, CrashLoopBackOff, pending pods - each error required different debugging approaches. This day built my K8s troubleshooting foundation.
+Day 77: Jenkins Pipeline Syntax - One wrong bracket broke the entire pipeline. Learned to validate syntax religiously.
+Day 98: Terraform VPC Networking - Understanding route tables, NAT gateways, and internet gateways was mind-bending. But finally getting it right felt amazing!
+
+
+📈 Learning Statistics
+
+100 Days of consecutive learning
+100 Labs completed successfully
+7 Major Technology Stacks mastered
+1000+ Commands executed
+Countless errors debugged and resolved
+∞ Growth mindset developed
+
+
+🎓 Key Takeaways
+What This Challenge Taught Me
+
+Consistency Beats Intensity - Showing up every day, even for just one hour, compounds into remarkable results.
+Embrace Failure - Every error message was a teacher. Every failed deployment was a lesson. The struggle is where growth happens.
+Documentation is Crucial - Writing down what I learned solidified my understanding and created a valuable reference.
+The DevOps Mindset - It's not just about tools; it's about automation, collaboration, and continuous improvement.
+Community Matters - Reading docs, Stack Overflow, and official documentation became second nature.
+I'm Capable of More Than I Thought - There were days I wanted to quit, but I kept going. That's the real victory.
+
+
+📁 Repository Structure
+100-days-devops-challenge/
+│
+├── README.md                           # This file
+├── 01-10_Linux_Fundamentals.md        # Days 1-10 documentation
+├── 11-20_Web_Services_Databases.md    # Days 11-20 documentation
+├── 21-34_Git_Version_Control.md       # Days 21-34 documentation
+├── 35-47_Docker_Containerization.md   # Days 35-47 documentation
+├── 48-67_Kubernetes_Orchestration.md  # Days 48-67 documentation
+├── 68-81_Jenkins_CICD.md              # Days 68-81 documentation
+└── 82-100_Ansible_Terraform.md        # Days 82-100 documentation
+
+🚀 What's Next?
+This 100-day challenge is just the beginning! I'm now ready to:
+
+🎯 Apply these skills in real-world projects
+🌟 Contribute to open-source DevOps tools
+📚 Pursue advanced certifications (AWS Solutions Architect, CKA)
+🤝 Mentor others starting their DevOps journey
+🔧 Build production-grade CI/CD pipelines
+☁️ Architect multi-cloud infrastructure solutions
+
+
+🙏 Acknowledgments
+
+KodeKloud for providing an excellent hands-on learning platform
+The DevOps Community for countless resources and support
+My Future Self for not giving up when things got tough
+Everyone who believed in me throughout this journey
+
+
+📞 Connect With Me
+I'd love to connect with fellow DevOps enthusiasts!
+https://www.linkedin.com/in/adeniyi-islamiat-b48146372
+GitHub: https://github.com/Funmitez
+Email: adeniyifunmilola77@gmail.com
+
+📜 License
+This project is licensed under the MIT License - feel free to use this as inspiration for your own learning journey!
+
+💬 Final Thoughts
+
+"The journey of 100 days taught me that consistency, resilience, and a passion for learning can transform you into someone capable of anything. If you're reading this and thinking about starting your own challenge - DO IT. Your future self will thank you."
+
+100 Days. Zero Excuses. Challenge Conquered. 🎉
+
+<div align="center">
+⭐ If this inspired you, please star this repository! ⭐
+Started: August 27, 2025 | Completed: December 23, 2025
+Status: ✅ CHALLENGE COMPLETED
+</div>
