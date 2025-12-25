@@ -1,0 +1,19 @@
+Day 71: Configure Jenkins Job for Package Installation
+
+Date: November 5, 2025
+Overview
+Created my first Jenkins job to automate package installation.
+Key Concepts Learned
+
+Freestyle projects
+Build steps
+Shell command execution
+Build triggers
+
+Commands Used
+bash# In Jenkins build step
+sudo yum install -y httpd
+sudo systemctl start httpd
+
+Challenges Faced
+Permission issues! Jenkins user needed sudo access for package installation.
