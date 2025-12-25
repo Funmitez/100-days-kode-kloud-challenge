@@ -1,0 +1,27 @@
+Day 85: Create Files on App Servers using Ansible
+
+Date: December 16, 2025
+Overview
+Dynamically created files using Ansible modules.
+Key Concepts Learned
+
+File module
+Content generation
+Directory creation
+State management
+
+Playbook
+yaml- name: Create configuration directory
+  file:
+    path: /etc/myapp
+    state: directory
+    mode: '0755'
+
+- name: Create config file
+  file:
+    path: /etc/myapp/config.txt
+    state: touch
+    mode: '0644'
+
+Challenges Faced
+Managing file states and ensuring idempotency across multiple runs.
