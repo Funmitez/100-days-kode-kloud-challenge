@@ -1,0 +1,25 @@
+Day 78: Jenkins Conditional Pipeline
+
+Date: November 30, 2025
+Overview
+Implemented conditional logic in pipelines.
+Key Concepts Learned
+
+When conditions
+Branch-based execution
+Parameter-based conditions
+Environment-based decisions
+
+Jenkinsfile
+groovystage('Deploy to Production') {
+    when {
+        branch 'main'
+        environment name: 'DEPLOY_ENV', value: 'production'
+    }
+    steps {
+        sh './deploy-prod.sh'
+    }
+}
+
+Challenges Faced
+Complex condition combinations and ensuring safety for production deployments.
