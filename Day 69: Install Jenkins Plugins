@@ -1,0 +1,19 @@
+Day 69: Install Jenkins Plugins
+
+Date: November 5, 2025
+Overview
+Extended Jenkins functionality through plugins.
+Key Concepts Learned
+
+Plugin management
+Essential plugins (Git, Pipeline, Docker)
+Plugin dependencies
+Update management
+
+Commands Used
+
+Manage Jenkins → Plugin Manager → Available Plugins
+Installed: Git, Pipeline, Docker Pipeline, Blue Ocean, Credentials
+
+Challenges Faced
+Plugin dependency conflicts! Some plugins required specific versions of other plugins.
