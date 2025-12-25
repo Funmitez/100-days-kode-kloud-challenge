@@ -1,0 +1,25 @@
+Day 82: Create Ansible Inventory for App Server Testing
+
+Date: December 16, 2025
+Overview
+Set up Ansible inventory for managing multiple servers.
+Key Concepts Learned
+
+Inventory file structure
+Host groups
+Variables in inventory
+INI vs YAML format
+
+Inventory File
+ini[app_servers]
+app1 ansible_host=192.168.1.10 ansible_user=admin
+app2 ansible_host=192.168.1.11 ansible_user=admin
+
+[db_servers]
+db1 ansible_host=192.168.1.20
+
+[all:vars]
+ansible_python_interpreter=/usr/bin/python3
+
+Challenges Faced
+SSH connection issues and getting host key verification working properly.
