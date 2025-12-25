@@ -1,0 +1,60 @@
+Day 100: Create and Configure Alarm Using CloudWatch Using Terraform
+
+Date: December 23, 2025
+Overview
+THE FINAL DAY! Set up CloudWatch monitoring and alarms.
+Key Concepts Learned
+
+CloudWatch metrics
+Alarm configuration
+SNS topic integration
+Monitoring thresholds
+
+Terraform Code
+hclresource "aws_sns_topic" "alerts" {
+  name = "infrastructure-alerts"
+}
+
+resource "aws_sns_topic_subscription" "email" {
+  topic_arn = aws_sns_topic.alerts.arn
+  protocol  = "email"
+  endpoint  = "devops@company.com"
+}
+
+resource "aws_cloudwatch_metric_alarm" "cpu_alarm" {
+  alarm_name          = "high-cpu-utilization"
+  comparison_operator = "GreaterThanThreshold"
+  evaluation_periods  = 2
+  metric_name         = "CPUUtilization"
+  namespace           = "AWS/EC2"
+  period              = 300
+  statistic           = "Average"
+  threshold           = 80
+  alarm_description   = "This metric monitors EC2 CPU utilization"
+  alarm_actions       = [aws_sns_topic.alerts.arn]
+
+  dimensions = {
+    InstanceId = aws_instance.web.id
+  }
+}
+
+resource "aws_cloudwatch_metric_alarm" "disk_alarm" {
+  alarm_name          = "low-disk-space"
+  comparison_operator = "LessThanThreshold"
+  evaluation_periods  = 1
+  metric_name         = "DiskSpaceAvailable"
+  namespace           = "System/Linux"
+  period              = 300
+  statistic           = "Average"
+  threshold           = 10
+  alarm_description   = "Disk space running low"
+  alarm_actions       = [aws_sns_topic.alerts.arn]
+}
+Commands Used
+bashterraform init
+terraform validate
+terraform plan -out=tfplan
+terraform apply tfplan
+
+Challenges Faced
+Setting appropriate alarm thresholds and avoiding alert fatigue!
