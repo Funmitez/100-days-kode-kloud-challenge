@@ -1,0 +1,22 @@
+Day 80: Jenkins Chained Builds
+
+Date: December 16, 2025
+Overview
+Connected multiple jobs in a workflow.
+Key Concepts Learned
+
+Upstream/downstream relationships
+Build triggers
+Parameter passing between jobs
+Pipeline orchestration
+
+Configuration
+groovypost {
+    success {
+        build job: 'integration-tests', 
+              parameters: [string(name: 'BUILD_NUMBER', value: "${BUILD_NUMBER}")]
+    }
+}
+
+Challenges Faced
+Managing dependencies and ensuring proper execution order.
