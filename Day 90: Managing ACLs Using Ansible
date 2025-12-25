@@ -1,0 +1,23 @@
+Day 90: Managing ACLs Using Ansible
+
+Date: December 17, 2025
+Overview
+Set file system Access Control Lists using Ansible.
+Key Concepts Learned
+
+ACL module
+Fine-grained permissions
+User/group ACLs
+Default ACLs
+
+Playbook
+yaml- name: Set ACL for user
+  acl:
+    path: /var/www/html
+    entity: webuser
+    etype: user
+    permissions: rwx
+    state: present
+
+Challenges Faced
+ACLs are complex! Understanding effective permissions and inheritance.
