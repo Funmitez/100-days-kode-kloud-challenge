@@ -1,0 +1,19 @@
+Day 86: Ansible Ping Module Usage
+
+Date: December 16, 2025
+Overview
+Tested connectivity to managed nodes using ping module.
+Key Concepts Learned
+
+Connectivity testing
+Ad-hoc commands
+Module execution
+Host reachability
+
+Commands Used
+bashansible all -m ping
+ansible app_servers -m ping
+ansible -i inventory.ini all -m ping
+
+Challenges Faced
+SSH authentication failures and Python interpreter path issues.
