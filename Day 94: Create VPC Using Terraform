@@ -1,0 +1,87 @@
+Day 94: Create VPC Using Terraform
+
+Date: December 22, 2025
+Overview
+Provisioned AWS VPC infrastructure using Terraform.
+Key Concepts Learned
+
+Terraform basics
+HCL syntax
+Provider configuration
+Resource blocks
+
+Terraform Code
+hclprovider "aws" {
+  region = "us-east-1"
+}
+
+resource "aws_vpc" "main" {
+  cidr_block           = "10.0.0.0/16"
+  enable_dns_hostnames = true
+  enable_dns_support   = true
+
+  tags = {
+    Name = "main-vpc"
+    Environment = "production"
+  }
+}
+
+resource "aws_subnet" "public" {
+  vpc_id            = aws_vpc.main.id
+  cidr_block        = "10.0.1.0/24"
+  availability_zone = "us-east-1a"
+
+  tags = {
+    Name = "public-subnet"
+  }
+}
+Commands Used
+bashterraform init
+terraform plan
+terraform apply
+terraform destroy
+Challenges Faced
+Understanding Terraform state and dealing with AWS IAM permissions.
+Date: December 22, 2025
+Overview
+Provisioned AWS VPC infrastructure using Terraform.
+Key Concepts Learned
+
+Terraform basics
+HCL syntax
+Provider configuration
+Resource blocks
+
+Terraform Code
+hclprovider "aws" {
+  region = "us-east-1"
+}
+
+resource "aws_vpc" "main" {
+  cidr_block           = "10.0.0.0/16"
+  enable_dns_hostnames = true
+  enable_dns_support   = true
+
+  tags = {
+    Name = "main-vpc"
+    Environment = "production"
+  }
+}
+
+resource "aws_subnet" "public" {
+  vpc_id            = aws_vpc.main.id
+  cidr_block        = "10.0.1.0/24"
+  availability_zone = "us-east-1a"
+
+  tags = {
+    Name = "public-subnet"
+  }
+}
+Commands Used
+bashterraform init
+terraform plan
+terraform apply
+terraform destroy
+
+Challenges Faced
+Understanding Terraform state and dealing with AWS IAM permissions.
