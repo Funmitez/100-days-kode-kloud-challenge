@@ -1,0 +1,25 @@
+Day 87: Ansible Install Package
+
+Date: December 17, 2025
+Overview
+Automated package installation across multiple distributions.
+Key Concepts Learned
+
+Package module (yum, apt, dnf)
+Distribution-specific handling
+Package state management
+Update and upgrade operations
+
+Playbook
+yaml- name: Install packages
+  yum:
+    name:
+      - httpd
+      - git
+      - vim
+    state: present
+    update_cache: yes
+
+Challenges Faced
+Handling different package managers for different Linux distributions.
+
