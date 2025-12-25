@@ -1,0 +1,33 @@
+Day 93: Using Ansible Conditionals
+
+Date: December 21, 2025
+Overview
+Implemented conditional logic in playbooks.
+Key Concepts Learned
+
+When statements
+Fact-based conditions
+Variable-based conditions
+Complex conditionals
+
+Playbook
+yaml- name: Install package based on OS
+  yum:
+    name: httpd
+    state: present
+  when: ansible_os_family == "RedHat"
+
+- name: Install package on Ubuntu
+  apt:
+    name: apache2
+    state: present
+  when: ansible_distribution == "Ubuntu"
+
+- name: Conditional deployment
+  command: /deploy-script.sh
+  when: 
+    - environment == "production"
+    - ansible_processor_cores >= 4
+
+Challenges Faced
+Complex conditional logic and understanding fact variables.
