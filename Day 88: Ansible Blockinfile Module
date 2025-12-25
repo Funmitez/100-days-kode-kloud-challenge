@@ -1,0 +1,25 @@
+Day 88: Ansible Blockinfile Module
+
+Date: December 17, 2025
+Overview
+Modified configuration files by inserting blocks of text.
+Key Concepts Learned
+
+Blockinfile module
+Markers for blocks
+Idempotent file modification
+Configuration management
+
+Playbook
+yaml- name: Add custom configuration
+  blockinfile:
+    path: /etc/httpd/conf/httpd.conf
+    block: |
+      <VirtualHost *:80>
+        ServerName example.com
+        DocumentRoot /var/www/html
+      </VirtualHost>
+    marker: "# {mark} ANSIBLE MANAGED BLOCK"
+
+Challenges Faced
+Ensuring blocks don't duplicate on multiple playbook runs.
