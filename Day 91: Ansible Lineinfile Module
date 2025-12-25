@@ -1,0 +1,22 @@
+Day 91: Ansible Lineinfile Module
+
+Date: December 17, 2025
+Overview
+Modified specific lines in configuration files.
+Key Concepts Learned
+
+Lineinfile module
+Regular expressions
+Line insertion/replacement
+Backup options
+
+Playbook
+yaml- name: Configure SSH settings
+  lineinfile:
+    path: /etc/ssh/sshd_config
+    regexp: '^PermitRootLogin'
+    line: 'PermitRootLogin no'
+    backup: yes
+
+Challenges Faced
+Writing correct regex patterns and avoiding unintended line modifications.
