@@ -1,0 +1,61 @@
+Day 81: Jenkins Multistage Pipeline
+
+Date: December 16, 2025
+Overview
+Created complex multi-stage pipeline with parallel execution.
+Key Concepts Learned
+
+Parallel stages
+Stage orchestration
+Pipeline optimization
+Build time reduction
+
+Jenkinsfile
+groovypipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                sh 'make build'
+            }
+        }
+        stage('Parallel Tests') {
+            parallel {
+                stage('Unit Tests') {
+                    steps {
+                        sh 'npm run test:unit'
+                    }
+                }
+                stage('Integration Tests') {
+                    steps {
+                        sh 'npm run test:integration'
+                    }
+                }
+                stage('Security Scan') {
+                    steps {
+                        sh 'npm audit'
+                    }
+                }
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh './deploy.sh'
+            }
+        }
+    }
+    post {
+        always {
+            junit 'test-results/*.xml'
+            archiveArtifacts artifacts: 'build/**'
+        }
+        failure {
+            mail to: 'team@company.com',
+                 subject: "Build Failed: ${env.JOB_NAME} - ${env.BUILD_NUMBER}",
+                 body: "Build failed. Check: ${env.BUILD_URL}"
+        }
+    }
+}
+
+Challenges Faced
+Optimizing pipeline execution time with parallel stages while managing resource constraints!
