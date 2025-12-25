@@ -1,0 +1,20 @@
+Day 75: Jenkins Slave Nodes
+
+Date: November 15, 2025
+Overview
+Distributed builds across multiple nodes.
+Key Concepts Learned
+
+Master-slave architecture
+Node configuration
+SSH slave setup
+Build distribution
+
+Commands Used
+
+Manage Jenkins → Manage Nodes → New Node
+Configured SSH credentials
+Set node labels for build routing
+
+Challenges Faced
+SSH key authentication between master and slaves. Network connectivity issues!
