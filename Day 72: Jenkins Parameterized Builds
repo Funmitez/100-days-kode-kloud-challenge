@@ -1,0 +1,21 @@
+Day 72: Jenkins Parameterized Builds
+
+Date: November 12, 2025
+Overview
+Made builds flexible with parameters.
+Key Concepts Learned
+
+String parameters
+Choice parameters
+Boolean parameters
+Parameter usage in scripts
+
+Configuration
+groovyparameters {
+    string(name: 'ENVIRONMENT', defaultValue: 'dev', description: 'Target environment')
+    choice(name: 'BRANCH', choices: ['main', 'develop', 'staging'], description: 'Git branch')
+    booleanParam(name: 'RUN_TESTS', defaultValue: true, description: 'Run tests?')
+}
+
+Challenges Faced
+Validating parameter inputs and handling edge cases in build scripts.
