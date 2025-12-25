@@ -1,0 +1,21 @@
+Day 68: Set Up Jenkins Server
+
+Date: November 5, 2025
+Overview
+Installed and configured Jenkins automation server.
+Key Concepts Learned
+
+Jenkins installation methods
+Initial admin password retrieval
+Basic Jenkins architecture
+Plugin ecosystem
+
+Commands Used
+bashsudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+sudo yum install jenkins java-11-openjdk
+sudo systemctl start jenkins
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
+Challenges Faced
+Java version compatibility and firewall configuration. Port 8080 needed to be opened!
