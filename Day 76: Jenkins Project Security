@@ -1,0 +1,20 @@
+Day 76: Jenkins Project Security
+
+Date: November 16, 2025
+Overview
+Implemented project-level security controls.
+Key Concepts Learned
+
+Project-based matrix authorization
+Build permissions
+Access control strategies
+Security best practices
+
+Configuration
+
+Enabled project-based security
+Assigned permissions per project
+Configured build and read access
+
+Challenges Faced
+Balancing security with usability. Too restrictive broke collaboration!
