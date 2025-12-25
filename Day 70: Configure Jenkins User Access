@@ -1,0 +1,20 @@
+Day 70: Configure Jenkins User Access
+
+Date: November 5, 2025
+Overview
+Set up user authentication and authorization in Jenkins.
+Key Concepts Learned
+
+User management
+Matrix-based security
+Role-based access control (RBAC)
+Project-based permissions
+
+Commands Used
+
+Manage Jenkins → Configure Global Security
+Created users and assigned roles
+Configured authentication methods
+
+Challenges Faced
+Accidentally locked myself out! Had to disable security temporarily to regain access.
