@@ -1,0 +1,26 @@
+Day 89: Ansible Manage Services
+
+Date: December 17, 2025
+Overview
+Controlled service states using Ansible.
+Key Concepts Learned
+
+Service module
+Service state (started, stopped, restarted)
+Enable on boot
+Service handlers
+
+Playbook
+yaml- name: Ensure nginx is running
+  service:
+    name: nginx
+    state: started
+    enabled: yes
+
+- name: Restart nginx if config changed
+  service:
+    name: nginx
+    state: restarted
+
+Challenges Faced
+Understanding when to use handlers vs direct service tasks.
