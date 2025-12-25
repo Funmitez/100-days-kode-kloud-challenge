@@ -1,0 +1,23 @@
+Day 84: Copy Data to App Servers using Ansible
+
+Date: December 16, 2025
+Overview
+Used Ansible to distribute files across multiple servers.
+Key Concepts Learned
+
+Copy module
+Template module
+File permissions
+Idempotency
+
+Commands Used
+yaml- name: Copy configuration file
+  copy:
+    src: /local/config.conf
+    dest: /etc/app/config.conf
+    owner: root
+    group: root
+    mode: '0644'
+
+Challenges Faced
+File ownership and permission issues on target servers.
